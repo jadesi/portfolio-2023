@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Jade Simões</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
+    <!-- Importação Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="background-header">
+            <span></span>
+        </div>
+
+        <div class="container infos-header">
+            <img src="./assets/img-perfil.png" alt="foto de perfil Jade Simões">
+            <h1>Olá, eu sou a Jade.</h1>
+            <p>Sou Designer gráfica atuante no setor de Marketing, em transição de carreira para área de produto, com foco em Design de Produto.</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="about-infos">
+
+            <div class="about-me">
+
+                <h3>Quem sou eu</h3>
+                <ul>
+                    <li>
+                        <ion-icon name="information-circle" class="infos-icon"></ion-icon>
+                        <a href="./about-me.html">Sobre mim</a>
+                    </li>
+
+                    <li>
+                        <ion-icon name="document-text" class="infos-icon"></ion-icon>
+                        <a href="url" download="nome-do-arquivo">Currículo</a>
+                    </li>
+                </ul> 
+
+            </div>
+    
+            <div class="contact">
+
+                <h3>Fale Comigo</h3>
+                <ul>
+                    <li>
+                        <ion-icon name="logo-linkedin" class="infos-icon"></ion-icon>
+                        <a class="" href="#">Linkedin</a>
+                    </li>
+
+                    <li>
+                        <ion-icon name="mail" class="infos-icon"></ion-icon>
+                        <a class="" href="#" id="open-modal">Enviar e-mail</a>
+                    </li>
+                </ul> 
+
+            </div>
+        </div>
+    </section>
+
+    <section class=" container">
+
+        <div class="projects">
+
+            <div class="cards wrapper">
+                <img src="./assets/projeto-1.png" href="https://jadesi.github.io/Jade_Simoes-links/" target="_blank"alt="preview do projeto">
+                <span>HTML | CSS | JavaScript | Git | Github | Figma</span>
+                <h4>Jade Simões - Links para contato</h4>
+                <p>Projeto desenvolvido através do programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.</p>
+                <a class="button" href="https://jadesi.github.io/Jade_Simoes-links/" target="_blank">Acessar projeto</a>
+            </div>
+
+            <div class="cards wrapper">
+                <img src="./assets/projeto-2.png" href="https://jadesi.github.io/ods_4_educacao_de_qualidade/" alt="preview do projeto">
+                <span>HTML | CSS | Figma</span>
+                <h4>Projeto ODS - 04 Edicação de Qualidade</h4>
+                <p>Projeto desenvolvido durante as aulas do projeto ElasNaTech 2023. Para fixação de conceitos aprendidos durante os módulos do curso.</p>
+                <a class="button" href="https://jadesi.github.io/ods_4_educacao_de_qualidade/" target="_blank">Acessar projeto</a>
+            </div>
+
+            <div class="cards wrapper">
+                <img src="./assets/projeto-3.png" href="https://github.com/jadesi/projeto-serfrontend" target="_blank"alt="preview do projeto">
+                <span>HTML | CSS</span>
+                <h4>SerFrontEnd</h4>
+                <p>Atividade desenvolvida durante as aulas do projeto ElasNaTech 2023 como prática dos conceitos e tags do CSS.</p>
+                <a class="button" href="https://github.com/jadesi/projeto-serfrontend" target="_blank">Acessar projeto</a>
+            </div>
+
+            <div class="cards wrapper">
+                <img src="./assets/projeto-4.png" href="https://jadesi.github.io/Landing-Page-Tom-s-Jazz-School/" target="_blank"alt="preview do projeto">
+                <span>HTML | CSS</span>
+                <h4>Landing Page - Tom's Jazz School</h4>
+                <p>Projeto desenvolvido através de aulas gratuitas sobre HTML e CSS disponibilizadas pela Onebitcode.</p>
+                <a class="button" href="https://jadesi.github.io/Landing-Page-Tom-s-Jazz-School/" target="_blank">Acessar projeto</a>
+            </div>
+
+            <div class="cards wrapper">
+                <img src="./assets/projeto-5.png" href="https://github.com/jadesi/Atividade-Cardapio" target="_blank" alt="preview do projeto">
+                <span>HTML | CSS</span>
+                <h4>Atividade Cardápio</h4>
+                <p>Projeto desenolvido durante o módulo de HTML e CSS do ElasNaTech 2023.</p>
+                <a class="button" href="https://github.com/jadesi/Atividade-Cardapio" target="_blank">Acessar projeto</a>
+            </div>
+ 
+            <div class="cards wrapper">
+                <img src="./assets/projeto-6.png" href="https://github.com/jadesi/Atividade_Curriculo" target="_blank" alt="preview do projeto">
+                <span>HTML</span>
+                <h4>Atividade Currículo</h4>
+                <p>Atividade desenvolvida durante o módulo de introdução ao HTML do Bootcamp ElasNaTech 2023.</p>
+                <a class="button" href="https://github.com/jadesi/Atividade_Curriculo" target="_blank">Acessar projeto</a>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div class="modal-contact">
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>Entre em contato</h2>
+                <button id="close-modal">Fechar</button>
+            </div>
+            <div>
+                <form class="modal-body" action="https://formsubmit.co/jadesimoes07@gmail.com" method="POST">
+                    <p>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="username" required/>
+                    </p>
+                    <p>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="usermail" required/>
+                    </p>
+                    <p>
+                        <label for="message">Deixe sua mensagem:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"required></textarea>
+                    </p>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container contact-links">
+            <div class="thanks">
+                <h2>Obrigada!</h2>
+                <p>Desenvolvido por Jade Simões</p>
+                <p>Todos os direitos reservados © 2023 - São Paulo</p>
+            </div>
+            
+            <div class="social-media">
+
+                <div class="social-link">
+                    <a href="#" class="">
+                        <ion-icon name="logo-github" size="large"></ion-icon>
+                        <p>Github</p>
+                    </a>
+                </div>
+
+                <div class="social-link">
+                    <a href="#" class="">
+                        <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                        <p>Linkedin</p>
+                    </a>
+                </div>
+                    
+                <div class="social-link">
+                    <a href="#" class="d-flex">
+                        <ion-icon name="logo-instagram" size="large"></ion-icon>
+                        <p>Instagram</p>
+                    </a>
+                </div>
+
+                <div class="social-link">
+                    <a href="#" class="d-flex">
+                        <ion-icon name="logo-behance" size="large"></ion-icon>
+                        <p>Behance</p>
+                    </a>
+                </div>
+             </div>   
+            
+        </div>
+
+    </footer>
+
+    <!-- Script Ionic Icons-->
+    <script src="./script-modal.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Script Modal-->
+    
+
+
+    
+</body>
+</html>
