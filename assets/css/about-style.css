@@ -20,6 +20,11 @@
     color: var(--highlight-100);
 }
 
+.tecnologies {
+    text-align: center;
+    color: var(--highlight-100);
+}
+
 .call-to-action {
     padding: 30px;
     text-align: center;

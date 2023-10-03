@@ -34,7 +34,7 @@ body {
 
 .background-header{
     height: 300px;
-    background-image: url(./assets/bg-teste\ 2.png);
+    background-image: url(./assets/images/bg-hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,7 +94,6 @@ body {
 .infos-icon {
     color: var(--highlight-100);
 }
-
 
 .projects {
     display: grid;
@@ -180,6 +179,21 @@ footer {
 .social-link a:hover{
     color: var(--text-color);
     transition: .3s;
+}
+
+@media (max-width: 480px) {
+    .projects {
+        display: grid;        
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    
+    .contact-links {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
