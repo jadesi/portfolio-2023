@@ -4,7 +4,7 @@
 
 Projeto final do Bootcamp ElasNaTech 2023, como compilado de diversos projetos desenvolvidos ao longo das aulas.
 
-[🔗 Clique aqui para acessar](https://jadesi.github.io/portfolio-2023/)
+[🔗 Clique aqui para acessar o projeto](https://jadesi.github.io/portfolio-2023/)
 
 ## ⚒️ Tecnologias
 
